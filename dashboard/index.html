@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Launch Radar v6 — Honestly Shrunk</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="mast">
+  <div class="mast-top">
+    <div>
+      <h1>Token Launch Radar <span class="vtag">v6 · Honestly Shrunk</span></h1>
+      <p class="sub" id="derived">Pre-token protocols ranked by implied launch value. Every figure is derived at run time from the sealed snapshot; nothing is hand-entered.</p>
+      <p class="modelline">MODEL: size curve &times; category offset &times; momentum (7d) &times; seasoning (tokenless age) &times; breadth</p>
+      <p class="shrinkline" id="shrinkline">Category offsets are shrunk toward 1 by the evidence behind them and hard-capped; the Method view prints every offset three ways: peers, raw, applied.</p>
+    </div>
+    <nav class="views">
+      <a href="#/board" data-nav="board">Board</a>
+      <a href="#/method" data-nav="method">Method &amp; validation</a>
+      <a href="#/peers" data-nav="peers">Launched peers</a>
+    </nav>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="verify" id="verify"></div>
+</header>
+<main id="app"></main>
+<footer class="foot">
+  <p>Implied value is this entry's own model claim, not a prediction that a token will launch. A protocol listed here records no token in the snapshot; that is DefiLlama's record, not proof none exists. Farm plans are activity suggestions with estimated costs, not financial advice.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="model.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
